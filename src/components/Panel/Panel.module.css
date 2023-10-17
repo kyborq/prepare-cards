@@ -39,5 +39,6 @@
 @media screen and (max-width: 768px) {
   .Panel {
     width: 100%;
+    padding: 32px;
   }
 }

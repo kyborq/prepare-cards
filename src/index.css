@@ -1,6 +1,7 @@
 :root {
   font-family: "Martian Mono", monospace;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 h1,
@@ -24,6 +25,6 @@ body {
 }
 
 #root {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
 }

@@ -17,6 +17,7 @@ export const Field = forwardRef(
           ref={ref}
           className={styles.Input}
           name={name}
+          autoComplete="off"
           onChange={onChange}
         />
       </div>
@@ -43,6 +44,7 @@ export const MultilineField = forwardRef(
           className={styles.Input}
           name={name}
           onChange={onChange}
+          autoComplete="off"
         />
       </div>
     );
