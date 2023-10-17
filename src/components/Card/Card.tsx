@@ -22,10 +22,14 @@ export const Card = forwardRef(
         animate={isDeleted && { width: 0 }}
       >
         <motion.div
-          drag
-          onDragStart={() => setDragged(true)}
-          onDragEnd={() => setDragged(false)}
-          onClick={() => !isDragged && onClick && onClick()}
+          onContextMenu={(e) => {
+            e.preventDefault();
+            onClick && onClick();
+          }}
+          onClick={() => {
+            setDragged(!isDragged);
+          }}
+          onDoubleClick={onClick}
           initial={{ scale: 0 }}
           animate={{
             scale: isDeleted ? 0 : 1,
