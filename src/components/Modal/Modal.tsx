@@ -44,7 +44,9 @@ export const Modal: React.FC<Props> = ({
           >
             <div className={styles.Header}>
               <h2 className={styles.Title}>{title}</h2>
-              <IconButton icon="close" onClick={handleClose} />
+              <div className={styles.Actions}>
+                <IconButton icon="close" onClick={handleClose} />
+              </div>
             </div>
             <div className={styles.Content}>{children}</div>
           </motion.div>
