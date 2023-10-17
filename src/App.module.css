@@ -1,0 +1,53 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 48px;
+  overflow: hidden;
+}
+
+.Header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #ffffff4f;
+  backdrop-filter: blur(24px);
+}
+
+.HeaderContainer {
+  padding: 64px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Actions {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.Page {
+  padding: 64px;
+  padding-top: 160px;
+}
+
+.Logo {
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+}
+
+.Buttons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}

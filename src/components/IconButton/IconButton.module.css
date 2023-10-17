@@ -1,0 +1,8 @@
+.Icon {
+  cursor: pointer;
+  fill: #c7c7c7;
+}
+
+.Icon:hover {
+  fill: #000000;
+}

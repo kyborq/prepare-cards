@@ -1,0 +1,41 @@
+.Container {
+  width: calc(20% - 12px);
+}
+
+.Card {
+  height: 150px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Question {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  fill: #c7c7c7;
+}
+
+.Close:hover {
+  fill: #fa4545;
+}
+
+.Answer {
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: break-spaces;
+}
