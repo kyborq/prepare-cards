@@ -14,8 +14,10 @@ export const Icon: React.FC<Props> = ({ name, className, fill, onClick }) => {
       fill={fill}
       className={className}
       onClick={(e) => {
-        e.stopPropagation();
-        onClick && onClick();
+        if (onClick) {
+          e.stopPropagation();
+          onClick();
+        }
       }}
     />
   );
